@@ -1,0 +1,28 @@
+html {
+  background: #fefefe;
+}
+
+/* NAVIGATION STYLES */
+nav {
+  width: 100%;
+  height: auto;
+  background: #ccc;
+  margin-top: -16px;
+  text-align: center;
+}
+
+ul {
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: red;
+  display: inline-block;
+}
+
+li {
+  line-height: 45px;
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+}

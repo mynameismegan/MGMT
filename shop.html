@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Website for MGMT" />
+  <meta name="author" content="Melissa Egan">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop</title>
+  <!-- OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <!-- END OPTIONAL IMPORTS -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/stylesheets/bootstrap-iso.css"/> -->
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/shop.css" />
+  <link rel="stylesheet" href="Filterizr-master/demo/index.css" />
+</head>
+<body>
+  <style>
+    body {
+    background-image: url(assets/images/girl-holding-orb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  </style>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="assets/images/shadow-logo.png" alt="MGMT" class="logo"/>
+      </a>
+      <a id="main-menu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbar-menu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="about.html">ABOUT</a>
+        <a class="navbar-item" href="music.html">MUSIC</a>
+        <a class="navbar-item" href="shop.html">SHOP</a>
+        <a class="navbar-item" href="media.html">MEDIA</a>
+        <a class="navbar-item" href="tour.html">TOUR</a>
+      </div>
+      <div class="row">
+        <ul class="simplefilter">
+          <li class="fltr-controls active" data-filter="all">All</li>
+          <li class="fltr-controls" data-filter="1">T-Shirts</li>
+          <li class="fltr-controls" data-filter="2">Sweaters</li>
+          <li class="fltr-controls" data-filter="3">Music</li>
+          <li class="fltr-controls" data-filter="4">Posters</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="content">
+    <style>
+        .filtr-item {
+          width: 25%;
+        }
+        @media screen and (max-width: 720px){
+          .filtr-item {
+            width: 100%;
+          }
+        }
+    </style>
+    <div class="row push-down">
+        <div class="filtr-container">
+          <div class="filtr-item" data-category="1" data-sort="value">
+            <img width="253" height="263" src="assets/images/beigetshirt.jpg" alt="beige shirt" />
+            <h2>Dragon T-Shirt</h2>
+            <h2>$25.00</h2>
+            <button type="button" title="Add to Cart" class="btn-crt" oneclick="">
+          <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="filtr-item" data-category="1" data-sort="value">
+           <img width="253" height="263" src="assets/images/cattshirt.jpg" alt="cat shirt"  />
+        </div>
+        <div class="filtr-item" data-category="2" data-sort="value">
+          <img width="253" height="263" src="assets/images/cranberrysweater.jpg" alt="sweater"  />
+        </div>
+        <div class="filtr-item" data-category="1" data-sort="value">
+          <img width="253" height="263" src="assets/images/gloopyloopstshirt.jpg" alt="gloopy tshirt"  />
+        </div>
+        <div class="filtr-item" data-category="2" data-sort="value">
+          <img width="253" height="263"src="assets/images/greenhoodie.jpg" alt="hoodie"  />
+        </div>
+        <div class="filtr-item" data-category="1" data-sort="value">
+          <img width="253" height="263" src="assets/images/yellowwomensshirt.jpeg" alt="yellow shirt"  />
+        </div>
+        <div class="filtr-item" data-category="2" data-sort="value">
+          <img width="253" height="263" src="assets/images/white-sweater.jpg" alt="White Sweater"  />
+        </div>
+        <div class="filtr-item" data-category="3" data-sort="value">
+            <img width="253" height="263" src="assets/images/1st-album.jpg" alt="Ocular Spectacular Album"  />
+        </div>
+        <div class="filtr-item" data-category="3" data-sort="value">
+          <img width="253" height="263" src="assets/images/2nd-album.jpg" alt="Congratulations Album"  />
+        </div>
+        <div class="filtr-item" data-category="3" data-sort="value">
+            <img width="253" height="263" src="assets/images/3rd-album.jpg" alt="MGMT Album"  />
+        </div>
+        <div class="filtr-item" data-category="3" data-sort="value">
+            <img width="253" height="263" src="assets/images/4th-album.png" alt="Little Dark Age Album"  />
+        </div>
+        <div class="filtr-item" data-category="4" data-sort="value">
+            <img width="253" height="263" src="assets/images/poster1.jpg" alt="Poster"  />
+        </div>
+        <div class="filtr-item" data-category="4" data-sort="value">
+            <img width="253" height="263" src="assets/images/poster2.jpg" alt="Poster"  />
+        </div>
+        <div class="filtr-item" data-category="4" data-sort="value">
+            <img width="253" height="263" src="assets/images/poster3.jpg" alt="Poster"  />
+        </div>
+        <div class="filtr-item" data-category="4" data-sort="value">
+            <img width="253" height="263" src="assets/images/poster4.jpg" alt="Poster"  />
+        </div>
+        <div class="filtr-item" data-category="4" data-sort="value">
+            <img width="253" height="263" src="assets/images/poster5.jpg" alt="Poster"  />
+        </div>
+        <div class="filtr-item" data-category="4" data-sort="value">
+            <img width="253" height="263" src="assets/images/poster6.jpg" alt="Poster"  />
+        </div>
+        <div class="filtr-item" data-category="4" data-sort="value">
+            <img width="253" height="263" src="assets/images/Poster7.jpg" alt="Poster"  />
+        </div>
+      </div>
+    </div>
+    <script src="assets/javascripts/jquery.min.js"></script>
+    <script src="assets/javascripts/jquery.filterizr.min.js"></script>
+    <script src="assets/javascripts/functions.js"></script>
+    <script>
+      $(document).ready(function(){
+        console.log('jquery is enabled');
+        var filterizd = $('.filtr-container').filterizr({});
+        fltr.filterizr('setOptions', {layout: 'sameSize'});
+      });
+    </script>
+  </div>
+  </body>
+</html>

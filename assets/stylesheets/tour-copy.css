@@ -1,0 +1,122 @@
+body {
+  margin:0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective-origin-x: 100%;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin-x: 100%;
+}
+
+.parallax__layer--back {
+  background-image: url(/assets/images/oliver-space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* transform: translateZ(-1px) */
+}
+
+
+
+/* .parallax__layer--foreground {
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  z-index: 1;
+} */
+.parallax__layer--base {
+  top: 0px;
+  transform: translateZ(0);
+}
+/* .parallax__layer--back {
+  transform: translateZ(-2px) scale(3);
+} */
+
+/* .parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  transform: translate3d(30px, -50px, 0px) rotateY(0deg);
+} */
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  color: #dcdbe3;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #dcdbe3;
+  text-decoration: none;
+}
+
+.navbar-item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.navbar-start {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 20px 0;
+  background-color: black;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #dcdbe3;
+}
+.content {
+  background-color: rgba(58, 66, 129, 0.9);
+  height: auto;
+}
+
+table {
+  padding: 0px 130px 0px 90px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 17px;
+}
+
+th {
+    height: 50px;
+    letter-spacing: 2px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+td {
+    height: 30px;
+    vertical-align: middle;
+    padding: 10px 20px 10px 20px;
+}
