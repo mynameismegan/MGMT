@@ -9,18 +9,19 @@ h1{
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 200;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   color: black;
   text-decoration: none;
   line-height: 14px;
+  padding-left: 10px;
 }
 
 html, body {
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  letter-spacing: 2px;
+  font-size: 10px;
+  /* letter-spacing: 2px; */
   color: white;
   text-decoration: none;
 }
@@ -57,23 +58,48 @@ a {
 }
 
 .content {
-  width: auto;
+  /* width: auto; */
   margin: 0;
   background-color: rgba(26, 39, 51, 0.9);
 }
 
 .filtr-item {
   background-color: white;
-  height: 300px;
-  width: 300px;
+  height: 420px;
+  width: 250px;
+  /* border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-button {
+}
+.filtr-container {
+  height: auto;
+  margin: 0;
+  /* padding: 0 0 0 50px; */
+}
+
+.wrapper {
+  padding-left: 30px;
+}
+
+.btn-crt {
+  background-color: #d20e31;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 5px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0px 0 10px 0px;
+}
+.cart {
     background-color: #3a4281;
     border: none;
     border-radius: 4px;
     color: white;
-    padding: 12px 17px;
+    padding: 5px 17px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -85,6 +111,7 @@ button {
 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
 
 /* .flex-grid {
   display: flex;

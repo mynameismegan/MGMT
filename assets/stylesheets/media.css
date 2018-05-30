@@ -42,11 +42,13 @@ a {
   width: auto;
   height: 100%;
   background-color: rgba(26, 39, 51, 0.9);
-  padding: 0 0 75px 0;
 }
 
-.videos {
-  padding: 0 0 75px 0;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1
 }
 
 button {
@@ -54,22 +56,25 @@ button {
   background: none;
   border: none;
 }
-/* 
-.picture {
-		position:absolute;
-		top: 10px;
-		left: 10px;
-		z-index: 1;
-	}
 
-	.youtube {
-		position:absolute;
-		top: 25px;
-		left: 25px;
-		z-index: 2;
-	} */
-
-/* .flex-grid {
+.row {
   display: flex;
-  /* margin: 0 0 0 58px; */
-/* }   */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.col {
+  flex: 580px 400px 411px;
+  max-width: 580px 400px 411px;
+  padding: 0 4px;
+}
+
+.col img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.picture {
+  margin: 0
+}

@@ -25,92 +25,140 @@
     background-position: center;
   }
   </style>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <img src="assets/images/shadow-logo.png" alt="MGMT" class="logo"/>
-        </a>
-        <a id="main-menu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="about.html">ABOUT</a>
-          <a class="navbar-item" href="music.html">MUSIC</a>
-          <a class="navbar-item" href="shop.html">SHOP</a>
-          <a class="navbar-item" href="media.html">MEDIA</a>
-          <a class="navbar-item" href="tour.html">TOUR</a>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="assets/images/shadow-logo.png" alt="MGMT" class="logo"/>
+      </a>
+      <a id="main-menu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbar-menu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="about.html">ABOUT</a>
+        <a class="navbar-item" href="music.html">MUSIC</a>
+        <a class="navbar-item" href="shop.html">SHOP</a>
+        <a class="navbar-item" href="media.html">MEDIA</a>
+        <a class="navbar-item" href="tour.html">TOUR</a>
       </div>
     </div>
   </nav>
   <div class="content">
-    <div class="bootstrap-iso">
-      <div class="videos">
-        <div align="center"><iframe id="active-video" width="907" height="510" style="padding:50px" src="https://www.youtube.com/embed/tmozGmGoJuw"frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-            <div class="flex-grid multiple-items">
-              <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/cB7IAXrCkO8')"><img src="assets/images/congratulationsvidcover.jpg" width="340" height="191" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button> </div>
-              <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/Zg2IcEHWXWo')"><img src="assets/images/coolsongvidcover.jpg" width="340" height="191" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button></div>
-              <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/QvSMp7T2Kes')"><img src="assets/images/flashdeleriumvidcover.jpg" width="340" height="191" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button></div>
-              <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/MmZexg8sxyk')"><img src="assets/images/electricfeelvidcover.jpg" width="340" height="191" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button></div>
-              <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/rtL5oMyBHPs')"><img src="assets/images/littledarkagevidcover.jpg" width="340" height="191" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button></div>
-              <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/B9dSYgd5Elk')"><img src="assets/images/timetopretendvidcover.jpg" width="340" height="191" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button></div>
-        </div>
+    <div align="center"><iframe id="active-video" width="907" height="510" style="padding:50px" src="https://www.youtube.com/embed/tmozGmGoJuw"frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div class="multiple-items">
+        <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/cB7IAXrCkO8')"><img src="assets/images/congratulationsvidcover.jpg" width="258" height="145" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button> </div>
+        <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/Zg2IcEHWXWo')"><img src="assets/images/coolsongvidcover.jpg" width="258" height="145" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button></div>
+        <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/MmZexg8sxyk')"><img src="assets/images/electricfeelvidcover.jpg" width="258" height="145" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button></div>
+        <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/rtL5oMyBHPs')"><img src="assets/images/littledarkagevidcover.jpg" width="258" height="145" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button></div>
+        <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/B9dSYgd5Elk')"><img src="assets/images/timetopretendvidcover.jpg" width="258" height="145" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button></div>
+        <div class="picture"><button onClick="getSrc('https://www.youtube.com/embed/QvSMp7T2Kes')"><img src="assets/images/flashdeleriumvidcover.jpg" width="258" height="145" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button></div>
+      </div>
+  <hr />
+  <div class="row">
+    <div class="col">
+      <div class="column has-text-centered">
+        <a
+          href="assets/images/grammy-awards.jpg"
+          data-lightbox="demo-lightbox"
+          data-title="Ben and Andrew">
+          <img src="assets/images/grammy-awards.jpg" />
+        </a>
+      </div>
+      <div class="column has-text-centered">
+        <a
+          href="assets/images/piggy-back.jpg"
+          data-lightbox="demo-lightbox"
+          data-title="Chilling">
+          <img src="assets/images/piggy-back.jpg" />
+        </a>
+      </div>
+      <div class="column has-text-centered">
+        <a
+          href="assets/images/ben-portrait.jpg"
+          data-lightbox="demo-lightbox"
+          data-title="Ben Playing">
+          <img src="assets/images/ben-portrait.jpg" />
+        </a>
+      </div>
     </div>
+    <div class="col">
+      <div class="column has-text-centered">
+        <a
+          href="assets/images/against-a-wall.jpg"
+          data-lightbox="demo-lightbox"
+          data-title="Friends">
+          <img src="assets/images/against-a-wall.jpg" />
+        </a>
+      </div>
+      <div class="column has-text-centered">
+        <a
+          href="assets/images/in-woods.jpg"
+          data-lightbox="demo-lightbox"
+          data-title="Ben">
+          <img src="assets/images/in-woods.jpg" />
+        </a>
+      </div>
+      <div class="column has-text-centered">
+        <a
+          href="assets/images/ben-and-andrew.png"
+          data-lightbox="demo-lightbox"
+          data-title="Smoking">
+          <img src="assets/images/ben-and-andrew.png" />
+        </a>
+      </div>
+    </div>
+    <!-- <div class="column has-text-centered">
+      <a
+        href="assets/images/black&white.jpg"
+        data-lightbox="demo-lightbox"
+        data-title="Poloroid">
+        <img src="assets/images/black&white.jpg" />
+      </a>
+    </div> -->
+
+    <!-- <div class="column has-text-centered">
+      <a
+        href="assets/images/grammy-awards.jpg"
+        data-lightbox="demo-lightbox"
+        data-title="Grammy Awards">
+        <img src="assets/images/grammy-awards.jpg" />
+      </a>
+    </div>
+    <div class="column has-text-centered">
+      <a
+        href="assets/images/2018-mgmt.jpg"
+        data-lightbox="demo-lightbox"
+        data-title="Laughing">
+        <img src="assets/images/2018-mgmt.jpg" />
+      </a>
+    </div>
+    <div class="column has-text-centered">
+      <a
+        href="assets/images/piggy-back.jpg"
+        data-lightbox="demo-lightbox"
+        data-title="On the Beach">
+        <img src="assets/images/piggy-back.jpg" />
+      </a>
+    </div> -->
   </div>
 </div>
   <script src="assets/javascripts/functions.js"></script>
   <script type="text/javascript" src="assets/javascripts/jquery.min.js"></script>
   <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
-
+  <script src="assets/javascripts/lightbox.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
       $('.multiple-items').slick({
       dots: true,
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      // variableWidth: true
       });
     });
   </script>
-      <div class="bootstrap-iso">
-        <section class="section">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="one-time">
-                  <div><img src="assets/images/ben-and-andrew.png" /></div>
-                  <div><img src="assets/images/ben.jpg" /></div>
-                  <div><img src="assets/images/black&white.jpg" /></div>
-                  <div><img src="assets/images/in-woods.jpg" /></div>
-                  <div><img src="assets/images/ben-portrait.jpg" /></div>
-                  <div><img src="assets/images/smoking2.jpg" /></div>
-                  <div><img src="assets/images/2018-mgmt.jpg" /></div>
-                  <div><img src="assets/images/grammy-awards.jpg" /></div>
-                  <div><img src="assets/images/piggy-back.jpg" /></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <script type="text/javascript" src="assets/javascripts/jquery.min.js"></script>
-        <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
-        <script type="text/javascript">
-          $(document).ready(function(){
-            $('.one-time').slick({
-              dots: true,
-              infinite: true,
-              speed: 300,
-              slidesToShow: 1,
-              adaptiveHeight: true
-            });
-          });
-        </script>
-    </div>
-  </div>
 </body>
 </html>

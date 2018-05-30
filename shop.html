@@ -7,11 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shop</title>
   <!-- OPTIONAL IMPORTS -->
-  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
   <!-- END OPTIONAL IMPORTS -->
   <!-- <link rel="stylesheet" type="text/css" href="assets/stylesheets/bootstrap-iso.css"/> -->
-  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/shop.css" />
   <link rel="stylesheet" href="Filterizr-master/demo/index.css" />
 </head>
@@ -46,20 +44,25 @@
       </div>
       <div class="row">
         <ul class="simplefilter">
-          <li class="fltr-controls active" data-filter="all">All</li>
-          <li class="fltr-controls" data-filter="1">T-Shirts</li>
-          <li class="fltr-controls" data-filter="2">Sweaters</li>
-          <li class="fltr-controls" data-filter="3">Music</li>
-          <li class="fltr-controls" data-filter="4">Posters</li>
+          <li class="fltr-controls active" data-filter="all">
+            <button onClick="setActive('all')">ALL</button></li>
+          <li class="fltr-controls" data-filter="1">
+            <button onClick="setActive('1')">T-SHIRTS</button></li>
+          <li class="fltr-controls" data-filter="2">
+            <button onClick="setActive('2')">SWEATERS</button></li>
+          <li class="fltr-controls" data-filter="3">
+            <button onClick="setActive('3')">MUSIC</button></li>
+          <li class="fltr-controls" data-filter="4">
+            <button onClick="setActive('4')">POSTERS</button></li>
         </ul>
       </div>
     </div>
   </nav>
   <div class="content">
     <style>
-        .filtr-item {
+        /* .filtr-item {
           width: 25%;
-        }
+        } */
         @media screen and (max-width: 720px){
           .filtr-item {
             width: 100%;
@@ -67,68 +70,118 @@
         }
     </style>
     <div class="row push-down">
-        <div class="filtr-container">
-          <div class="filtr-item" data-category="1" data-sort="value">
-            <img width="253" height="263" src="assets/images/beigetshirt.jpg" alt="beige shirt" />
-            <h2>Dragon T-Shirt</h2>
-            <h2>$25.00</h2>
-            <button type="button" title="Add to Cart" class="btn-crt" oneclick="">
-          <span>Add to Cart</span>
-          </button>
-        </div>
-        <div class="filtr-item" data-category="1" data-sort="value">
-           <img width="253" height="263" src="assets/images/cattshirt.jpg" alt="cat shirt"  />
-        </div>
-        <div class="filtr-item" data-category="2" data-sort="value">
-          <img width="253" height="263" src="assets/images/cranberrysweater.jpg" alt="sweater"  />
-        </div>
-        <div class="filtr-item" data-category="1" data-sort="value">
-          <img width="253" height="263" src="assets/images/gloopyloopstshirt.jpg" alt="gloopy tshirt"  />
-        </div>
-        <div class="filtr-item" data-category="2" data-sort="value">
-          <img width="253" height="263"src="assets/images/greenhoodie.jpg" alt="hoodie"  />
-        </div>
-        <div class="filtr-item" data-category="1" data-sort="value">
-          <img width="253" height="263" src="assets/images/yellowwomensshirt.jpeg" alt="yellow shirt"  />
-        </div>
-        <div class="filtr-item" data-category="2" data-sort="value">
+      <div class="filtr-container">
+        <div class="filtr-item wrapper" data-category="2" data-sort="value">
           <img width="253" height="263" src="assets/images/white-sweater.jpg" alt="White Sweater"  />
+          <h2>MGMT Sweater</h2>
+          <h2>$40.00</h2>
+          <button id="myButton" title="Add to Cart" class="cart"><span>Add to Cart</span></button>
         </div>
-        <div class="filtr-item" data-category="3" data-sort="value">
-            <img width="253" height="263" src="assets/images/1st-album.jpg" alt="Ocular Spectacular Album"  />
+        <div class="filtr-item wrapper" data-category="1" data-sort="value">
+          <img class="imgA" width="253" height="263" src="assets/images/crystalcastles.jpg" alt="cat shirt"  />
+          <h2>Crystal Castles T-Shirt</h2>
+          <h2>$25.00</h2>
+          <div type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></div>
         </div>
-        <div class="filtr-item" data-category="3" data-sort="value">
-          <img width="253" height="263" src="assets/images/2nd-album.jpg" alt="Congratulations Album"  />
+        <div class="filtr-item wrapper" data-category="2" data-sort="value">
+          <img class="imgA" width="253" height="263" src="assets/images/cranberrysweater.jpg" alt="sweater"  />
+          <h2>Heart Sweatshirt</h2>
+          <h2>$40.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
         </div>
-        <div class="filtr-item" data-category="3" data-sort="value">
-            <img width="253" height="263" src="assets/images/3rd-album.jpg" alt="MGMT Album"  />
+        <div class="filtr-item wrapper" data-category="1" data-sort="value">
+          <img class="imgA" width="253" height="263" src="assets/images/gloopyloopstshirt.jpg" alt="gloopy tshirt"  />
+          <h2>Gloopy Loopy T-Shirt</h2>
+          <h2>$25.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
         </div>
-        <div class="filtr-item" data-category="3" data-sort="value">
-            <img width="253" height="263" src="assets/images/4th-album.png" alt="Little Dark Age Album"  />
+        <div class="filtr-item wrapper" data-category="2" data-sort="value">
+          <img class="imgA" width="253" height="263"src="assets/images/greenhoodie2.png" alt="green"  />
+          <h2>Little Dark Age Sweater</h2>
+          <h2>$35.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
         </div>
-        <div class="filtr-item" data-category="4" data-sort="value">
-            <img width="253" height="263" src="assets/images/poster1.jpg" alt="Poster"  />
+        <div class="filtr-item wrapper" data-category="1" data-sort="value">
+          <img class="imgA" width="253" height="263" src="assets/images/beigetshirt.jpg" alt="beige shirt" />
+          <h2>Dragon T-Shirt</h2>
+          <h2>$25.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
         </div>
-        <div class="filtr-item" data-category="4" data-sort="value">
-            <img width="253" height="263" src="assets/images/poster2.jpg" alt="Poster"  />
+        <div class="filtr-item wrapper" data-category="1" data-sort="value">
+          <img class="imgA" width="253" height="263" src="assets/images/yellowwomensshirt.jpeg" alt="yellow shirt"  />
+          <h2>Yellow Duck T-Shirt</h2>
+          <h2>$25.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
         </div>
-        <div class="filtr-item" data-category="4" data-sort="value">
-            <img width="253" height="263" src="assets/images/poster3.jpg" alt="Poster"  />
+        <div class="filtr-item wrapper" data-category="3" data-sort="value">
+          <img class="imgA" width="253" height="263" src="assets/images/1st-album.jpg" alt="Ocular Spectacular Album"  />
+          <h2>Oracular Spectacular CD</h2>
+          <h2>$14.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
         </div>
-        <div class="filtr-item" data-category="4" data-sort="value">
-            <img width="253" height="263" src="assets/images/poster4.jpg" alt="Poster"  />
+        <div class="filtr-item wrapper" data-category="3" data-sort="value">
+          <img class="imgA" width="253" height="263" src="assets/images/2nd-album.jpg" alt="Congratulations Album"  />
+          <h2>Congratulations CD</h2>
+          <h2>$14.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
         </div>
-        <div class="filtr-item" data-category="4" data-sort="value">
-            <img width="253" height="263" src="assets/images/poster5.jpg" alt="Poster"  />
+        <div class="filtr-item wrapper" data-category="3" data-sort="value">
+          <img class="imgA" width="253" height="263" src="assets/images/3rd-album.jpg" alt="MGMT Album"  />
+          <h2>MGMT (The Album) CD</h2>
+          <h2>$14.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
         </div>
-        <div class="filtr-item" data-category="4" data-sort="value">
-            <img width="253" height="263" src="assets/images/poster6.jpg" alt="Poster"  />
+        <div class="filtr-item wrapper" data-category="3" data-sort="value">
+          <img class="imgA" width="253" height="263" src="assets/images/4th-album.png" alt="Little Dark Age Album"  />
+          <h2>Little Dark Age Vinyl LP</h2>
+          <h2>$30.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
         </div>
-        <div class="filtr-item" data-category="4" data-sort="value">
-            <img width="253" height="263" src="assets/images/Poster7.jpg" alt="Poster"  />
+        <div class="filtr-item wrapper" data-category="4" data-sort="value">
+          <img class="imgA" width="188" height="250" src="assets/images/poster1.jpg" alt="Poster"  />
+          <h2>MGMT Flames Salt Lake City '13 Poster</h2>
+          <h2>$10.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
+        </div>
+        <div class="filtr-item wrapper" data-category="4" data-sort="value">
+          <img class="imgA" width="167" height="250" src="assets/images/poster2.jpg" alt="Poster"  />
+          <h2>MGMT Space Alaska '14 Poster</h2>
+          <h2>$10.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
+        </div>
+        <div class="filtr-item wrapper" data-category="4" data-sort="value">
+          <img class="imgA" width="190" height="250" src="assets/images/poster3.jpg" alt="Poster"  />
+          <h2>MGMT Hollywood '08 Poster</h2>
+          <h2>$10.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
+        </div>
+        <div class="filtr-item wrapper" data-category="4" data-sort="value">
+          <img class="imgA" width="188" height="250" src="assets/images/poster4.jpg" alt="Poster"  />
+          <h2>MGMT Pozo '11 Poster</h2>
+          <h2>$10.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
+        </div>
+        <div class="filtr-item wrapper" data-category="4" data-sort="value">
+          <img class="imgA" width="153" height="250" src="assets/images/poster5.jpg" alt="Poster"  />
+          <h2>MGMT Houston '10 Poster</h2>
+          <h2>$10.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
+        </div>
+        <div class="filtr-item wrapper" data-category="4" data-sort="value">
+          <img class="imgA" width="150" height="250" src="assets/images/poster6.jpg" alt="Poster"  />
+          <h2>MGMT Mexico '16 Poster</h2>
+          <h2>$10.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
+        </div>
+        <div class="filtr-item wrapper" data-category="4" data-sort="value">
+          <img class="imgA" width="170" height="250" src="assets/images/Poster7.jpg" alt="Poster"  />
+          <h2>Brooklyn '13 Poster</h2>
+          <h2>$10.00</h2>
+          <button type="button" title="Add to Cart" class="btn-crt" oneclick=""><span>Out of Stock</span></button>
         </div>
       </div>
     </div>
+    <script src="assets/javascripts/functions.js"></script>
     <script src="assets/javascripts/jquery.min.js"></script>
     <script src="assets/javascripts/jquery.filterizr.min.js"></script>
     <script src="assets/javascripts/functions.js"></script>
@@ -136,8 +189,11 @@
       $(document).ready(function(){
         console.log('jquery is enabled');
         var filterizd = $('.filtr-container').filterizr({});
-        fltr.filterizr('setOptions', {layout: 'sameSize'});
+        filterizd.filterizr('setOptions', {layout: 'sameSize'});
       });
+        document.getElementById("myButton").onclick = function () {
+        location.href = "http://127.0.0.1:3000/product-details.html";
+    };
     </script>
   </div>
   </body>

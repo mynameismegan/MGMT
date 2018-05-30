@@ -11,7 +11,7 @@ body, html {
   height: 100vh;
   /* overflow-x: hidden;
   overflow-y: scroll; */
-  overflow: scroll;
+  overflow: scroll; */
   perspective-origin-x: 100%;
 }
 .parallax__layer {
@@ -23,9 +23,9 @@ body, html {
   transform-origin-x: 100%;
 }
 .parallax__layer--foreground {
-  /* -webkit-transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
-  z-index: 1; */
+  z-index: 1;
   top: 0;
   transform: translateZ(0);
 }
@@ -58,19 +58,21 @@ h1{
 
 a {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #dcdbe3;
-  text-decoration: none;
-}
-
-.navbar-item {
-  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 2px;
   color: white;
   text-decoration: none;
 }
+
+/* .navbar-item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+} */
 
 .logo {
     display: block;
