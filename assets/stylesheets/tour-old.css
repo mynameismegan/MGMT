@@ -9,11 +9,11 @@ body, html {
 .parallax {
   perspective: 1px;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+  overflow: scroll; */
   perspective-origin-x: 100%;
 }
-
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -22,35 +22,34 @@ body, html {
   left: 0;
   transform-origin-x: 100%;
 }
-
-.parallax__layer--back {
-  background-image: url(/assets/images/oliver-space.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* transform: translateZ(-1px) */
-}
-
-
-
-/* .parallax__layer--foreground {
+.parallax__layer--foreground {
   -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
   z-index: 1;
-} */
-.parallax__layer--base {
-  top: 0px;
+  top: 0;
   transform: translateZ(0);
 }
-/* .parallax__layer--back {
+.parallax__layer--base {
+  top: 0;
+  transform: translateZ(0);
+}
+.parallax__layer--back {
   transform: translateZ(-2px) scale(3);
-} */
+}
 
-/* .parallax__group {
+.parallax__group {
   position: relative;
   height: 100vh;
   transform-style: preserve-3d;
-  transform: translate3d(30px, -50px, 0px) rotateY(0deg);
-} */
+  /* transform: translate3d(30px, -50px, 0px) rotateY(0deg); */
+}
+
+.sticky {
+  position: fixed;
+  top: 214px;
+  width: 100%;
+  z-index: 1
+}
 
 h1{
   font-family: 'Roboto', sans-serif;
@@ -59,19 +58,21 @@ h1{
 
 a {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #dcdbe3;
-  text-decoration: none;
-}
-
-.navbar-item {
-  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 2px;
   color: white;
   text-decoration: none;
 }
+
+/* .navbar-item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+} */
 
 .logo {
     display: block;
@@ -94,8 +95,9 @@ body {
   color: #dcdbe3;
 }
 .content {
-  background-color: rgba(58, 66, 129, 0.9);
+  background-color: rgba(26, 39, 51, 0.9);
   height: auto;
+  margin-top: 277px;
 }
 
 table {
