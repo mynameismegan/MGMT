@@ -60,20 +60,26 @@ button {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
 /* Create four equal columns that sits next to each other */
-.col {
-  flex: 580px 400px 411px;
-  max-width: 580px 400px 411px;
+.row .column {
+  flex: 550px 400px 400px;
+  max-width: 550px 400px 400px;
+  flex: 3;
+  max-width: 32%
+  padding: 0 4px;
+  flex: 1 0 25%;
+  box-sizing: border-box;
   padding: 0 4px;
 }
 
-.col img {
+  .column img {
   margin-top: 8px;
   vertical-align: middle;
-}
+} 
 
 .picture {
   margin: 0
