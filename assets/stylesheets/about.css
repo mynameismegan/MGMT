@@ -51,8 +51,7 @@ a {
 
 .top {
   display: flex;
-  /* width: 200px */
-  /* float: left; */
+  max-width: 1400px;
   padding: 20px 50px 50px 50px;
 }
 
