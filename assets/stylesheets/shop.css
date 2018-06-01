@@ -28,7 +28,7 @@ html, body {
 
 a {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 200;
   letter-spacing: 2px;
   color: white;
@@ -108,22 +108,20 @@ a {
     cursor: pointer;
 }
 
+button {
+  background-color: rgba(255,255,255,0)
+  border: none;
+  border-radius: 3px;
+  color: #3a4281;
+  padding: 5px 11px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+}
 button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
 }
-
-
-/* .flex-grid {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 150px 50px 150px;
-  padding: 30px 0px 30px 0px;
-}
-
-.flex-grid-thirds .col {
-  width: 32%;
-}
-
-.col {
-  margin-top: 100px
-} */

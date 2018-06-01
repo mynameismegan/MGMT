@@ -1,6 +1,5 @@
 body {
   margin:0;
-  /* height: 100%; */
 }
 
 h1{
@@ -13,6 +12,7 @@ p {
   font-size: 15px;
   font-weight: 150;
   line-height: 18px;
+  padding: 10px 50px 50px 50px;
 }
 
 a {
@@ -49,18 +49,26 @@ a {
   z-index: 1
 }
 
-.top {
+/* .row {
   display: flex;
-  max-width: 1400px;
-  padding: 20px 50px 50px 50px;
+  flex-wrap: wrap;
+  padding: 50px 100px 50px 100px;
 }
 
+/* .col {
+  flex: 2;
+}
+
+img {
+  padding: 30px 10px 100px 50px;
+} */
+
 .img {
-  display: block;
-  margin: 0 auto;
-  padding: 50px 30px 20px 150px;
+  float: left;
 }
 .text {
-  text-align: justify;
-  padding: 115px 150px 30px 30px;
+    overflow: auto;
+}
+.text {
+  padding: 50px 50px 50px 50px;
 }
