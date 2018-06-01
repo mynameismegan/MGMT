@@ -195,6 +195,10 @@
         location.href = "http://127.0.0.1:3000/product-details.html";
     };
     </script>
+    <script type="text/javascript"> document.addEventListener('click', function(e){
+      if(document.activeElement.toString() == '[object HTMLButtonElement]'){
+        document.activeElement.blur(); } });
+    </script>
   </div>
   </body>
 </html>
