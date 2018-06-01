@@ -1,21 +1,24 @@
 body {
   margin:0;
+  background-color: black;
 }
 
 h1{
-  font-family: 'Nunito', sans-serif;
-  color: #dcdbe3;
+  font-family: 'Fredericka the Great', cursive;
+  color: white;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 15px;
+  font-size: 40px;
+  line-height: 20px;
+  text-align: center;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 15px;
-  color: #dcdbe3;
+  line-height: 20px;
+  color: white;
+  text-align: center;
 }
 
 html, body {
@@ -33,14 +36,14 @@ a {
   letter-spacing: 2px;
   color: white;
   text-decoration: none;
+  text-align: center;
   display: block;
 }
 
 .logo {
     display: block;
-    height: 150px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 10px;
     z-index: 2;
     position: relative;
 }
@@ -63,19 +66,67 @@ a {
 }
 
 video {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-display: block;
-z-index: 1;
+  /* position: relative; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  opacity: 0.5;
+  /* z-index: 0; */
 }
 .content {
+  position: relative;
   width: auto;
-  /* height: 100%; */
-  background-color: rgba(26, 39, 51, 0.9);
+  height: 950px;
+  /* background-color: rgba(26, 39, 51, 0.9); */
 }
+.content video {
+  position: relative;
+  z-index: 0;
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+  margin: auto;
+  width: 100%;
+  padding: 100px 0 50px 0;
+}
+/* .row {
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 10px 0 50px 0;
+
+} */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 40%; */
+  padding: 10px 0 10px 0;
+}
+
+.buttons {
+  display: block;
+  margin: auto;
+  width: 38%;
+}
+
+.button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 17px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px 10px 10px 10px;
+    cursor: pointer;
+  }

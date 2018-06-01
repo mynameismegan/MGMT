@@ -96,12 +96,12 @@ button {
   box-shadow: 0 50px 125px rgba(0, 0, 0, 0.4);
 }
 
-img {
+.picture {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
-img:hover {
+.picture:hover {
   width: 263px;
   height: 150px;
   border-radius: 5px;

@@ -11,7 +11,7 @@ p {
   color: #dcdbe3;
   font-size: 15px;
   font-weight: 150;
-  line-height: 18px;
+  line-height: 20px;
   padding: 10px 50px 50px 50px;
 }
 
@@ -31,6 +31,7 @@ a {
 }
 .content {
   width: auto;
+  height: 700px;
   background-color: rgba(26, 39, 51, 0.9);
 }
 .navbar-start {
@@ -49,26 +50,21 @@ a {
   z-index: 1
 }
 
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 100px 50px 100px;
+.row {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/* .col {
-  flex: 2;
-}
-
-img {
-  padding: 30px 10px 100px 50px;
-} */
-
 .img {
   float: left;
+  padding: 100px 0 100px 100px;
+  overflow: auto;
+
 }
 .text {
-    overflow: auto;
-}
-.text {
-  padding: 50px 50px 50px 50px;
+  overflow: auto;
+  /* max-width: 650px; */
+  padding: 100px 50px 50px 50px;
+  text-align: justify;
 }

@@ -3,12 +3,12 @@ body {
 }
 
 h1{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredericka the Great', cursive;
   color: #dcdbe3;
   font-weight: 400;
   /* font-style: italic; */
   font-size: 21px;
-  line-height: 6px;
+  line-height: 15px;
 }
 
 a {
@@ -63,7 +63,7 @@ tr {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    margin: 35px 0 10px 45px;
+    margin: 23px 0 10px 45px;
     cursor: pointer;
 }
 
