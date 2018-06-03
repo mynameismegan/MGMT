@@ -1,6 +1,6 @@
 body {
   margin:0;
-  background-color: black;
+  background:none;
 }
 
 h1{
@@ -66,49 +66,28 @@ a {
 }
 
 video {
-  /* position: relative; */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  top:0;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
-  opacity: 0.5;
-  /* z-index: 0; */
 }
+
 .content {
-  position: relative;
-  width: auto;
-  height: 950px;
-  /* background-color: rgba(26, 39, 51, 0.9); */
-}
-.content video {
-  position: relative;
-  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(26, 39, 51, 0.7);
+  z-index: 1;
 }
 
 .overlay {
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:1;
-  margin: auto;
-  width: 100%;
-  padding: 100px 0 50px 0;
+  padding-top: 70px;
 }
-/* .row {
-  display: block;
-  margin: auto;
-  width: 100%;
-  padding: 10px 0 50px 0;
 
-} */
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* width: 40%; */
   padding: 10px 0 10px 0;
 }
 
@@ -120,12 +99,12 @@ img {
 
 .button {
     background: none;
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
     padding: 12px 17px;
     text-align: center;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     margin: 10px 10px 10px 10px;
     cursor: pointer;
